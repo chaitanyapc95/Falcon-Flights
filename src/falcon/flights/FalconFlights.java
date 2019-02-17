@@ -10,16 +10,6 @@ package falcon.flights;
  * @author 1896052
  */
 public class FalconFlights {
-    Agent agent1=new Agent();
-    Booking booking1=new Booking();
-    Details details1=new Details();
-    Employee employee1=new Employee();
-    Flight flight1=new Flight();
-    Plane plane1=new Plane();
-    person person1=new person();
-    Certification certification1=new Certification();
-    Pilot pilot1=new Pilot();
-    Customer customer1=new Customer();
 
     /**
      * @param args the command line arguments
