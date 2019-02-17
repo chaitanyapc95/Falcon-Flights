@@ -14,16 +14,34 @@ public class person {
     String Lname;
     Double phone;
     String email;
-    public void Fname(){
-        System.out.println("First Name");
+    public void person(String Fname, String Lname, Double phone, String email){
+        this.Fname=Fname;
+        this.Lname=Lname;
+        this.phone=phone;
+        this.email=email;
     }
-    public void Lname(){
-        System.out.println("Last Name");
+    public String getFname(){
+        return Fname;
     }
-    public void phone(){
-        System.out.println("Phone Number");
+    public String getLname(){
+        return Lname;
     }
-    public void email(){
-        System.out.println("Email");
+    public Double getphone(){
+        return phone;
+    }
+    public String getemail(){
+        return email;
+    }
+    public void setFname(String Fname){
+        this.Fname=Fname;
+    }
+    public void setLname(String Lname){
+        this.Lname=Lname;
+    }
+    public void setphone(Double phone){
+        this.phone=phone;
+    }
+    public void setemail(String email){
+        this.email=email;
     }
 }
