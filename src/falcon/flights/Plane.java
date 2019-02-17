@@ -45,6 +45,7 @@ public class Plane
      this.capacity=capacity;
  }
  Pilot pt=new Pilot();
+ Certification ct=new Certification();
  
     
 }
