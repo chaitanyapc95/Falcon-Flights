@@ -9,7 +9,8 @@ package falcon.flights;
  *
  * @author 1893541
  */
-public class Agent {
+public class Agent extends Employee{
+    Details details1=new Details();
     String Gender;
     public void Agent(String Gender){
         this.Gender=Gender;

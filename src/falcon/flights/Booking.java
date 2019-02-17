@@ -12,6 +12,8 @@ import java.util.Date;
  * @author 1893541
  */
 public class Booking {
+    Flight flight1=new Flight();
+    
     Date dateOfBooking;
     
     public void Booking(Date dateOfBooking){
