@@ -13,6 +13,37 @@ public class Plane
 {
  String name,modelnumber;
  int capacity;
+ public void Plane()
+ {
+     this.name=name;
+     this.modelnumber=modelnumber;
+     this.capacity=capacity;
+     
+ }
+ public String getname()
+ {
+     return name;
+ }
+ public String getmodelnumber()
+ {
+     return modelnumber;
+ }
+ public int getcapacity()
+ {
+     return capacity;
+ }
+ public void setname(String name)
+ {
+     this.name=name;
+ }
+ public void setmodelnumber()
+ {
+     this.modelnumber=modelnumber;
+ }
+ public void setcapacity(int capacity)
+ {
+     this.capacity=capacity;
+ }
  
     
 }
