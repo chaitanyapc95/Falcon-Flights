@@ -9,7 +9,7 @@ package falcon.flights;
  *
  * @author 1896052
  */
-public class Employee {
+public class Employee extends person {
     String employeeid;
     Double salary;
     public void Employee(String employeeid, Double salary){
