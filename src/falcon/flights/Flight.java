@@ -13,6 +13,9 @@ import java.util.Date;
  * @author 1893541
  */
 public class Flight {
+    
+    Plane plane1=new Plane();
+    Details details1=new Details();
     String Id;
     String origin;
     String destination;
