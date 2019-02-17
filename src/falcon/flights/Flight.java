@@ -22,7 +22,7 @@ public class Flight {
     Date traveldate;
     Time time;
     
-   public void Flight(String Id,String orgin,String destination,Date traveldate,Time time){
+   public void Flight(String Id,String origin,String destination,Date traveldate,Time time){
        this.Id=Id;
        this.origin=origin;
        this.destination=destination;
