@@ -6,6 +6,7 @@
 package falcon.flights;
 
 import java.util.Date;
+import java.util.Scanner;
 
 /**
  *
@@ -26,7 +27,9 @@ public class FalconFlights {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
     Agent agent1=new Agent();
     Booking booking1=new Booking();
     Details details1=new Details();
@@ -44,11 +47,17 @@ public class FalconFlights {
     //details1.setRole("asjgdh");
     //System.out.println(details1.getRole());
     String ID;
+    String f,l;
     Date de = new Date();
     String y=de.toString();
     y=y.toUpperCase();
     System.out.println(y);
     String Fname="",Lname="";
+    
+        System.out.println("Enter First Name");
+        f=sc.next();
+        System.out.println("Enter Last Name");
+        l=sc.next();
     char c1 = y.charAt(8);
     char c2=y.charAt(9);
    int a=Character.getNumericValue(c1);
@@ -58,6 +67,8 @@ public class FalconFlights {
           }else{
         c1='O';
     } 
+    Fname=f;
+    Lname=l;
     //String x="19-FEB-OD-XX";
     Display(Fname,Lname,y,c1);
     }
