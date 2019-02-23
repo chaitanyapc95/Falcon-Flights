@@ -6,6 +6,7 @@
 package falcon.flights;
 
 import java.util.Date;
+import java.util.Scanner;
 
 /**
  *
@@ -18,7 +19,7 @@ public class FalconFlights {
         if("".equals(Fname) && "".equals(Lname)){
             System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+"XX");
         }else if("".equals(Lname) && !"".equals(Fname)){
-            System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+"x");
+            System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+"X");
         }else{
             System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+Lname.charAt(0));
         }
@@ -26,7 +27,9 @@ public class FalconFlights {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
     Agent agent1=new Agent();
     Booking booking1=new Booking();
     Details details1=new Details();
@@ -35,7 +38,7 @@ public class FalconFlights {
     Plane plane1=new Plane();
     person person1=new person();
     Certification certification1=new Certification();
-    Pilot pilot1=new Pilot();
+    
     Customer customer1=new Customer();
         // TODO code application logic here
    
@@ -44,11 +47,17 @@ public class FalconFlights {
     //details1.setRole("asjgdh");
     //System.out.println(details1.getRole());
     String ID;
+    String f,l;
     Date de = new Date();
     String y=de.toString();
     y=y.toUpperCase();
     System.out.println(y);
-    String Fname="Akhil",Lname="Uppari";
+    String Fname="",Lname="";
+    
+        System.out.println("Enter First Name");
+        f=sc.next();
+        System.out.println("Enter Last Name");
+        l=sc.next();
     char c1 = y.charAt(8);
     char c2=y.charAt(9);
    int a=Character.getNumericValue(c1);
@@ -58,8 +67,9 @@ public class FalconFlights {
           }else{
         c1='O';
     } 
+    Fname=f;
+    Lname=l;
     //String x="19-FEB-OD-XX";
     Display(Fname,Lname,y,c1);
     }
-    
 }
