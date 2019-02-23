@@ -35,6 +35,6 @@ public class Pilot {
     }
     Plane p1=new Plane();
    
-    int x;
+ 
 }
     
