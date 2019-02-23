@@ -13,7 +13,7 @@ public class Plane
 {
  String name,modelnumber;
  int capacity;
- public void Plane()
+ public void Plane(String name,String modelnumber,int capacity)
  {
      this.name=name;
      this.modelnumber=modelnumber;
