@@ -38,7 +38,7 @@ public class FalconFlights {
     Plane plane1=new Plane();
     person person1=new person();
     Certification certification1=new Certification();
-    Pilot pilot1=new Pilot();
+    Pilot pilot2=new Pilot();
     Customer customer1=new Customer();
         // TODO code application logic here
    

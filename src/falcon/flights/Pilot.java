@@ -35,6 +35,6 @@ public class Pilot
    {
        this.experience=experience;
    }
-   //Plane pl=new Plane();
+   Plane p2=new Plane();
     
 }
