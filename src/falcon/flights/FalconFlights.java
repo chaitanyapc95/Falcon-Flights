@@ -18,7 +18,7 @@ public class FalconFlights {
         if("".equals(Fname) && "".equals(Lname)){
             System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+"XX");
         }else if("".equals(Lname) && !"".equals(Fname)){
-            System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+"x");
+            System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+"X");
         }else{
             System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+Lname.charAt(0));
         }
@@ -48,7 +48,7 @@ public class FalconFlights {
     String y=de.toString();
     y=y.toUpperCase();
     System.out.println(y);
-    String Fname="Nishanth",Lname="Boju";
+    String Fname="",Lname="";
     char c1 = y.charAt(8);
     char c2=y.charAt(9);
    int a=Character.getNumericValue(c1);
