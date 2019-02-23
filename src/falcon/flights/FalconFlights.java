@@ -37,7 +37,6 @@ public class FalconFlights {
     Certification certification1=new Certification();
     Pilot pilot1=new Pilot();
     Customer customer1=new Customer();
-        // TODO code application logic here
    
    // plane1.modelnumber="sajhdkj";
    // details1.Details("adfad");
@@ -51,8 +50,8 @@ public class FalconFlights {
     String Fname="",Lname="";
     char c1 = y.charAt(8);
     char c2=y.charAt(9);
-   int a=Character.getNumericValue(c1);
-   int b=Character.getNumericValue(c2);
+    int a=Character.getNumericValue(c1);
+    int b=Character.getNumericValue(c2);
     if(b%2==0){
         c1='E';
           }else{
