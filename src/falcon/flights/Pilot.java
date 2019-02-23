@@ -7,15 +7,32 @@ package falcon.flights;
 
 /**
  *
- * @author 1893069
+ * @author 1896052
  */
 public class Pilot {
-    String name;
-    int experience;
-    public void pilot()
-            
-    {
-        this.name=name;
-        this.experience=experience;
-    }
+  String name;
+  int experience;
+  public void pilot()
+  {
+      this.name=name;
+      this.experience=experience;
+  }
+  public String getname()
+          {
+              return name;
+          }
+  public int getexperience()
+  {
+      return experience;
+  }
+  public void setname()
+  {
+      this.name=name;
+  }
+  public void setexperience()
+  {
+      this.experience=experience;
+  }
+  Plane p1=new Plane();
 }
+
