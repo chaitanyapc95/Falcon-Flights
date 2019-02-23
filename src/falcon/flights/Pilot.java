@@ -33,6 +33,7 @@ public class Pilot {
     {
         this.exp=exp;
     }
+    Plane p1=new Plane();
    
 }
     
