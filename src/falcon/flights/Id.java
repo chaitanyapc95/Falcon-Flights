@@ -11,6 +11,5 @@ package falcon.flights;
  */
 public class Id 
 {
-    
-    
+ 
 }

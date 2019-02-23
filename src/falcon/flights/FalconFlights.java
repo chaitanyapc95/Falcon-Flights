@@ -48,7 +48,7 @@ public class FalconFlights {
     String y=de.toString();
     y=y.toUpperCase();
     System.out.println(y);
-    String Fname="Nishanth",Lname="Boju";
+    String Fname="Akhil",Lname="Uppari";
     char c1 = y.charAt(8);
     char c2=y.charAt(9);
    int a=Character.getNumericValue(c1);
