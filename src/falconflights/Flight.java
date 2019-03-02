@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package falcon.flights;
+package falconflights;
 
 import java.sql.Time;
 import java.util.Date;
