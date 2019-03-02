@@ -28,6 +28,7 @@ public class Flight {
        this.destination=destination;
        this.traveldate=traveldate;
        this.time=time;
+       System.out.println(Id+origin);
    }
     
    public String getId(){
