@@ -9,13 +9,13 @@ package falconflights;
  *
  * @author 1896052
  */
-public class Customer extends person{
+public  class Customer extends person{
     String address;
     String passport;
-    public String  Customer(String address, String passport){
+    public static String  Customer(String address, String passport){
         
-        this.address=address;
-        this.passport=passport;
+        address=address;
+        passport=passport;
         return address+passport;
         
     }
