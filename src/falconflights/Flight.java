@@ -13,6 +13,8 @@ import java.util.Date;
  * @author 1893541
  */
 public class Flight {
+
+  
     
     Plane plane1=new Plane();
     Details details1=new Details();
@@ -22,12 +24,16 @@ public class Flight {
     Date traveldate;
     Time time;
     
-   public void Flight(String Id,String origin,String destination,Date traveldate,Time time){
-       this.Id=Id;
-       this.origin=origin;
-       this.destination=destination;
-       this.traveldate=traveldate;
-       this.time=time;
+   public static String Flight(String Id,String origin,String destination,Date date){
+       //Id=Id;
+       //origin=origin;
+       //this.destination=destination;
+      // this.traveldate=traveldate;
+     //  this.time=time;
+       return Id+" "+origin+" "+destination+" "+date;
+   }
+   public static void Display(){
+       System.out.println("1893541");
    }
     
    public String getId(){
