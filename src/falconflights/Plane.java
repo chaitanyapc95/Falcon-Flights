@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package falcon.flights;
+package falconflights;
 
 /**
  *
@@ -13,7 +13,7 @@ public class Plane
 {
  String name,modelnumber;
  int capacity;
- public void Plane(String name,String modelnumber,int capacity)
+ public void Plane()
  {
      this.name=name;
      this.modelnumber=modelnumber;

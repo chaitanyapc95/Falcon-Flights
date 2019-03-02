@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package falcon.flights;
+package falconflights;
 
 /**
  *
@@ -33,7 +33,7 @@ public class Pilot {
     {
         this.exp=exp;
     }
-//    Plane p1=new Plane();
+    Plane p1=new Plane();
    
  
 }

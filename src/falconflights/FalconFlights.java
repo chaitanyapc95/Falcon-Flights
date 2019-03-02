@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package falcon.flights;
+package falconflights;
 
 import java.util.Date;
 import java.util.Scanner;
@@ -40,6 +40,7 @@ public class FalconFlights {
     Certification certification1=new Certification();
     Pilot p1=new Pilot();
     Customer customer1=new Customer();
+        // TODO code application logic here
    
    // plane1.modelnumber="sajhdkj";
    // details1.Details("adfad");
@@ -59,8 +60,8 @@ public class FalconFlights {
         l=sc.next();
     char c1 = y.charAt(8);
     char c2=y.charAt(9);
-    int a=Character.getNumericValue(c1);
-    int b=Character.getNumericValue(c2);
+   int a=Character.getNumericValue(c1);
+   int b=Character.getNumericValue(c2);
     if(b%2==0){
         c1='E';
           }else{
