@@ -14,11 +14,12 @@ public class person {
     String Lname;
     Double phone;
     String email;
-    public void person(String Fname, String Lname, Double phone, String email){
-        this.Fname=Fname;
-        this.Lname=Lname;
-        this.phone=phone;
-        this.email=email;
+    public static String person(String Fname, String Lname, Double phone, String email){
+//        this.Fname=Fname;
+//        this.Lname=Lname;
+//        this.phone=phone;
+//        this.email=email;
+        return Fname+Lname+phone+email;
     }
     public String getFname(){
         return Fname;

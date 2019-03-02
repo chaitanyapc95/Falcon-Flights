@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
  *
  * @author 1896052
  */
-public class Cus {
+public class Per {
     
-    public Cus() {
+    public Per() {
     }
     
     @BeforeClass
@@ -27,7 +27,7 @@ public class Cus {
     @AfterClass
     public static void tearDownClass() {
     }
-    
+      
     @Before
     public void setUp() {
     }
@@ -39,14 +39,12 @@ public class Cus {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-     @Test
-     public void Customer() {
-        System.out.println("Customer address and passport");
-        String address="2155 Ave VanHorne Montreal";
-        String passport="N1234567";
-        String expectedResult = "2155 Ave VanHorne Montreal"+"N1234567";
-        String realResult=falconflights.Customer.Customer(address,passport);
-        assertEquals(expectedResult, realResult);
-            
-     }    
+    @Test
+    public void Per() {
+    System.out.println("Display Person Fname,Lname.Phone,Email");
+        String Fname="Sri";
+        String Lname="Chaitanya";
+        double phone=123456789;
+        String email="abc@gmail.com";
+    }
 }
