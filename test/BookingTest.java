@@ -41,16 +41,14 @@ public class BookingTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-     public void testingFlight(){
-        System.out.println("Testing the method  Flight of class Flight");
-        Date date=new Date();
-        
-       // String dt=date.toString();
-       // Time time=new Time();
-        Date expectedResult=date;
-        Date real=falconflights.Booking.Booking(new Date());
-        assertEquals(expectedResult,real);
-     }
-    // @Test
-    // public void hello() {}
+    public void testingBooking(){
+            String Id="";
+            Date date=new Date();
+            String y=date.toString();
+            y=y.toUpperCase();
+            String expect="19-MAR-O-XX";
+            char c=falconflights.Booking.dateType(y);
+            String real=falconflights.Booking.generateID(Id,y, c);
+            assertEquals(expect,real);
+    }
 }

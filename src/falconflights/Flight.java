@@ -20,7 +20,7 @@ import java.util.Date;
 public class Flight {
    
     Plane plane1=new Plane();
-    Details details1=new Details();
+   // Details details1=new Details();
     String Id;
     String origin;
     String destination;

@@ -31,5 +31,5 @@ public  class Customer extends person{
     public void setpassport(){
         this.passport=passport;
     }
-    Booking bk=new Booking();
+   // Booking bk=new Booking();
 }

@@ -49,18 +49,15 @@ public class FlightTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-     public void testingFlight(){
-        System.out.println("Testing the method  Flight of class Flight");
-        String Id="1893541";
-        String origin="Montreal";
-        String destination="India";
-        Date date=new Date();
-        String dt=date.toString();
-       // Time time=new Time();
-        String expectedResult="1893541"+ "Montreal"+"India"+dt;
-        String realResult=falconflights.Flight.DisplayFlight(Id,origin,destination,new Date());
-        assertEquals(expectedResult,realResult);
-     }
-     
-    // public void hello() {}
+    public void testingFlight(){
+            String Id="Nishanth";
+            Id=Id.toUpperCase();
+            Date date=new Date();
+            String y=date.toString();
+            y=y.toUpperCase();
+            String expect="19-MAR-O-NH";
+            char c=falconflights.Flight.dateType(y);
+            String real=falconflights.Flight.generateID(Id,y, c);
+            assertEquals(expect,real);
+    }
 }

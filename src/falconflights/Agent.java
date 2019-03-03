@@ -14,7 +14,7 @@ import java.util.Date;
  * @author 1893541
  */
 public class Agent extends Employee{
-    Details details1=new Details();
+    //Details details1=new Details();
     String Gender;
     String Id;
     Date date;

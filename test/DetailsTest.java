@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -35,16 +36,15 @@ public class DetailsTest {
     @After
     public void tearDown() {
     }
-@Test
+ @Test
     public void testingDetails(){
-            String Role="supervisor";
-            String expect="supervisor";
-            String real=falconflights.Agent.Agent(Role);
+            String Id="";
+            Date date=new Date();
+            String y=date.toString();
+            y=y.toUpperCase();
+            String expect="19-MAR-O-XX";
+            char c=falconflights.Details.dateType(y);
+            String real=falconflights.Details.generateID(Id,y, c);
             assertEquals(expect,real);
     }
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }

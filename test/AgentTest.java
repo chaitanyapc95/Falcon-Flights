@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -43,9 +44,13 @@ public class AgentTest {
     // public void hello() {}
     @Test
     public void testingAgent(){
-            String Gender="male";
-            String expect="male";
-            String real=falconflights.Agent.Agent(Gender);
+            String Id="";
+            Date date=new Date();
+            String y=date.toString();
+            y=y.toUpperCase();
+            String expect="19-MAR-O-XX";
+            char c=falconflights.Agent.dateType(y);
+            String real=falconflights.Agent.generateID(Id,y, c);
             assertEquals(expect,real);
     }
 }
