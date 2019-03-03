@@ -12,18 +12,13 @@ import java.util.Date;
  * @author 1893541
  */
 public class Booking {
-
-    public static String Booking() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    Flight flight1=new Flight();
+   // Flight flight1=new Flight();
     
     Date dateOfBooking;
     
     public static Date Booking(Date dateOfBooking){
         //this.dateOfBooking=dateOfBooking;
-        //System.out.println("dateOfBooking");
-    return dateOfBooking;
+        return dateOfBooking;
     }
     public Date getdateOfBooking(){
         return dateOfBooking;

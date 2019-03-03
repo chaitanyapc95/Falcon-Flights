@@ -5,6 +5,7 @@
  */
 package falconflights;
 
+import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.String;
 import java.sql.Time;
 import java.util.Date;
 
@@ -24,17 +25,43 @@ public class Flight {
     Date traveldate;
     Time time;
     
-   public static String Flight(String Id,String origin,String destination,Date date){
-       //Id=Id;
-       //origin=origin;
-       //this.destination=destination;
-      // this.traveldate=traveldate;
-     //  this.time=time;
-       return Id+" "+origin+" "+destination+" "+date;
+    
+   public Flight(String Id,String origin,String destination,Date traveldate){
+       Id=Id;
+       origin=origin;
+       destination=destination;
+       traveldate=traveldate;
+      
+    DisplayFlight(Id,origin,destination,traveldate);
    }
-   public static void Display(){
-       System.out.println("1893541");
-   }
+  
+   public static String DisplayFlight(String Id,String origin,String destination,Date traveldate){
+    String f,l;
+    String y=traveldate.toString();
+    y=y.toUpperCase();
+        f=Id.toUpperCase();  
+    char c1 = y.charAt(8);
+    char c2=y.charAt(9);
+   int a=Character.getNumericValue(c1);
+   int b=Character.getNumericValue(c2);
+    if(b%2==0){
+        c1='E';
+          }else{
+        c1='O';
+    } 
+    String Fname=f;
+    if("".equals(Fname)){
+            System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+"XX");
+        }else{
+            System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+Fname.charAt(Fname.length()-1));
+        }
+       
+    System.out.println(Id+"/n"+origin+"/n"+destination+"/n"+traveldate);
+    return Id+origin+destination+traveldate;
+      }
+
+
+    
     
    public String getId(){
        return Id;
@@ -66,4 +93,5 @@ public class Flight {
    public void setTime(Time time){
        this.time=time;
    }
+
 }

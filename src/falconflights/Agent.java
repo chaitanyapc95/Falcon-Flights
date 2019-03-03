@@ -12,8 +12,9 @@ package falconflights;
 public class Agent extends Employee{
     Details details1=new Details();
     String Gender;
-    public void Agent(String Gender){
-        this.Gender=Gender;
+    public static String Agent(String Gender){
+        //this.Gender=Gender;
+        return Gender;
     }
     public void setGender(String Gender){
         this.Gender=Gender;
