@@ -68,7 +68,7 @@ public class Flight {
     }
    public void Display(){
        System.out.println(ID_CODE);
-       System.out.println("Id:"+Id+"/norigin:"+origin+"/nDestination:"+destination+"/nTravelDate:"+traveldate);
+       System.out.println("Id:"+Id+"\norigin:"+origin+"\nDestination:"+destination+"\nTravelDate:"+traveldate);
    }
 
    public String getId(){
