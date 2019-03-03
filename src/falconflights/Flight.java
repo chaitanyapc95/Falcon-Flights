@@ -36,6 +36,7 @@ public class Flight {
      //  this.time=time;
      String y=traveldate.toString();
          y=y.toUpperCase();
+         Id=Id.toUpperCase();
       char c=dateType(y);
         ID_CODE= generateID(Id,y,c);
          Display();
@@ -69,26 +70,7 @@ public class Flight {
        System.out.println(ID_CODE);
        System.out.println("Id:"+Id+"/norigin:"+origin+"/nDestination:"+destination+"/nTravelDate:"+traveldate);
    }
-   public static String generateID(String Fname,String y,char c1){
-       String u;
-        if("".equals(Fname)){
-           u=""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+"XX";
-    // System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+"XX");
-        }else if(Fname.length()==1){
-            u=""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+"X";
-           // System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+"X");
-        }else{
-            u=""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+Fname.charAt(Fname.length()-1);
-           // System.out.println(""+y.charAt(26)+y.charAt(27)+"-"+y.charAt(4)+y.charAt(5)+y.charAt(6)+"-"+c1+"-"+Fname.charAt(0)+Fname.charAt(Fname.length()-1));
-        }
-        return u;
-    }
-   public void Display(){
-       System.out.println(ID_CODE);
-       System.out.println("Id:"+Id+"/norigin:"+origin+"/nDestination:"+destination+"/nTravelDate:"+traveldate);
-   }
 
-    
    public String getId(){
        return Id;
    }
@@ -120,4 +102,4 @@ public class Flight {
 //       this.time=time;
 //   }
 }
-}
+
